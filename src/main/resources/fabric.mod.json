@@ -1,35 +1,30 @@
 {
   "schemaVersion": 1,
-  "id": "fabric-disable-firework-boost",
+  "id": "fabric-infinite-rockets",
   "version": "${version}",
 
-  "name": "Disable Firework Boost",
-  "description": "This mod will disable the ability to use a firework rocket to boost while flying with an elytra.",
+  "name": "Fabric Infinite Rockets",
+  "description": "This mod will make firework rockets not deplete when using an elytra.",
   "authors": [
-    "Thibov16"
+    "Remag"
   ],
-  "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/fabric-disable-firework-boost",
-    "issues": "https://github.com/Thibov16/fabric-disable-firework-boost/issues",
-    "sources": "https://github.com/Thibov16/fabric-disable-firework-boost"
-  },
 
-  "license": "The MIT License (MIT)",
-  "icon": "assets/disablefireworkboost/icon.png",
+  "license": "GPLv3",
+  "icon": "assets/infiniterockets/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "be.thibov16.disablefireworkboost.DisableFireworkBoost"
+      "com.remag.fir.InfiniteRockets"
     ]
   },
   "mixins": [
-    "disablefireworkboost.mixins.json"
+    "infiniterockets.mixins.json"
   ],
 
   "depends": {
-    "fabricloader": ">=0.14.12",
-    "minecraft": ">=1.18",
+    "fabricloader": ">=0.16.9",
+    "minecraft": "1.20.1",
     "java": ">=17"
   }
 }
